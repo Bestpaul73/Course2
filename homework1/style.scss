@@ -18,7 +18,9 @@ a {
 
 .top {
   height: 1024px;
-  background-image: url(./img/top_bgr.jpg);
+  // background-image: url(./img/top_bgr.jpg);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url(./img/top_bgr.jpg) center/cover no-repeat;
+
   background-repeat: no-repeat;
   background-position: center;
   // background-size: cover;
@@ -53,7 +55,7 @@ a {
     height: 48px;
     flex-shrink: 0;
     border-radius: 30px;
-    background: #eb443f;
+    background: #9c0332;
     color: #fff;
     font-size: 18px;
     font-family: Montserrat;
@@ -62,9 +64,13 @@ a {
     line-height: normal;
     margin-top: 44px;
     margin-left: 120px;
+    transition: background-color 0.3s ease-in;
+
+    &:hover {
+      background: #eb443f;
+    }
   }
 }
-
 .game-box {
   // width: 1440px;
   height: 556px;
@@ -78,10 +84,14 @@ a {
     height: 300px;
     border-radius: 16px;
     margin: 16px;
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: border 0.2s ease-in;
+
+    &:hover {
+      border: 3px solid #44d2ff;
+    }
   }
 
   &__item1 {
