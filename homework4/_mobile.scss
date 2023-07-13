@@ -7,10 +7,8 @@
   .top {
     width: 375px;
     min-width: none;
-    // height: 735px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000915 100%),
       url(./img/mob_top_bgr.png), lightgray -240.259px 0px / 294% 100% no-repeat;
-    background-position: center;
   }
 
   .header {
@@ -54,5 +52,56 @@
       margin-left: 16px;
       margin-bottom: 32px;
     }
+  }
+
+  .game {
+    width: 375px;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &-content {
+      align-items: center;
+      padding: 51px 0px 64px 0px;
+
+      &__title {
+        color: #fff;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      &__text {
+        width: 343px;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+      }
+    }
+
+    &-img {
+      &__1 {
+        background-image: url(./img/game1start2.png);
+        width: 344px;
+        height: 246px;
+        margin-bottom: 85px;
+      }
+
+      &__2 {
+        background-image: url(./img/game2start2.png);
+        width: 344px;
+        height: 231px;
+        margin-bottom: 90px;
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 487px;
   }
 }

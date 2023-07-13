@@ -119,7 +119,7 @@ a {
 .game-content {
   display: flex;
   width: 584px;
-  padding: 33px 0px 45.007px 0px;
+  padding: 33px 0px 45px 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
@@ -204,7 +204,6 @@ a {
     width: 375px;
     min-width: none;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000915 100%), url(./img/mob_top_bgr.png), lightgray -240.259px 0px/294% 100% no-repeat;
-    background-position: center;
   }
   .header {
     display: flex;
@@ -242,5 +241,47 @@ a {
   .game-box__text {
     margin-left: 16px;
     margin-bottom: 32px;
+  }
+  .game {
+    width: 375px;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .game-content {
+    align-items: center;
+    padding: 51px 0px 64px 0px;
+  }
+  .game-content__title {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .game-content__text {
+    width: 343px;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .game-img__1 {
+    background-image: url(./img/game1start2.png);
+    width: 344px;
+    height: 246px;
+    margin-bottom: 85px;
+  }
+  .game-img__2 {
+    background-image: url(./img/game2start2.png);
+    width: 344px;
+    height: 231px;
+    margin-bottom: 90px;
+  }
+  .footer {
+    padding-top: 487px;
   }
 }/*# sourceMappingURL=style.css.map */
